@@ -13,5 +13,7 @@ describe('Components/Loading/Circular', () => {
     const wrapper = mount(<Circular />)
 
     expect(wrapper.find(CircularProgress).length).toEqual(1)
+
+    mount.cleanUp()
   })
 })

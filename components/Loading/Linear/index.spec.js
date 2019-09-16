@@ -13,6 +13,8 @@ describe('Components/Loading/Linear', () => {
     const wrapper = mount(<Linear><div id="test" /></Linear>)
 
     expect(wrapper.find(LinearProgress).length).toEqual(1)
+
+    mount.cleanUp()
   })
 
   it('should render child component', () => {
@@ -20,5 +22,7 @@ describe('Components/Loading/Linear', () => {
     const wrapper = mount(<Linear><div id="test" /></Linear>)
 
     expect(wrapper.children().containsMatchingElement(<div id="test" />)).toEqual(true)
+
+    mount.cleanUp()
   })
 })
