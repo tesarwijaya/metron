@@ -15,7 +15,7 @@ describe('Components/Container/Item', () => {
     expect(wrapper.find(Grid).props().item).toEqual(true)
   })
 
-  it('should render children component', () => {
+  it('should render child component', () => {
     const mount = createMount()
     const wrapper = mount(<Item><div /></Item>)
 
