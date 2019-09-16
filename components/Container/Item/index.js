@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import {
   Grid,
@@ -25,6 +26,10 @@ function Component({
       {children}
     </Grid>
   )
+}
+
+Component.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export const Item = Component
