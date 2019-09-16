@@ -30,7 +30,7 @@ const variantIcon = {
   info: InfoIcon,
 }
 
-const styles = makeStyles(theme => ({
+const styles = makeStyles((theme) => ({
   success: {
     backgroundColor: green[600],
   },
@@ -95,7 +95,7 @@ CustomSnackbarContent.propTypes = {
   variant: PropTypes.oneOf(['success', 'warning', 'error', 'info']).isRequired,
 }
 
-const CustomSnackbarContentWrapper = CustomSnackbarContent
+export const CustomSnackbarContentWrapper = CustomSnackbarContent
 
 export function Component(props) {
   const {
