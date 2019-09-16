@@ -13,6 +13,8 @@ describe('Components/Container/Item', () => {
     const wrapper = mount(<Item><div /></Item>)
 
     expect(wrapper.find(Grid).props().item).toEqual(true)
+
+    mount.cleanUp()
   })
 
   it('should render child component', () => {
@@ -20,5 +22,7 @@ describe('Components/Container/Item', () => {
     const wrapper = mount(<Item><div /></Item>)
 
     expect(wrapper.find(Grid).children().containsMatchingElement(<div />)).toEqual(true)
+
+    mount.cleanUp()
   })
 })
